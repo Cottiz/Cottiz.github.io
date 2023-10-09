@@ -5,7 +5,7 @@ body {max-width: 1000px; margin: auto; background-color: purple; text-align: cen
 
 div {  background-color: #CC99FF; }
 
-.hienompi {background-color: #CCFFCC; }
+
 
 h1 {text-align: center; font-family: verdana, sans-serif; color: purple; }
 
@@ -15,4 +15,8 @@ ul {font-family: verdana, sans-serif; text-align: left; }
 
 	p {text-align: left; width: 900px; max-width:100%; }
 	
+ol {font-family: verdana, sans-serif; text-align: left; }
 
+header {.hienompi {background-color: #CCFFCC; }
+
+footer {text-align: center; font-family: verdana, sans-serif; color: purple }
