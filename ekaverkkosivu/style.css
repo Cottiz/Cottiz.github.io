@@ -29,4 +29,5 @@ nav >p {background-color:aqua; text-align: center; font-family: verdana, sans-se
 figure >img {border: 5px solid #4333d4}
 
 #linkit > li{display: inline;}
+
 #linkit {background-color: rgb(243, 191, 236); text-align: center;}
