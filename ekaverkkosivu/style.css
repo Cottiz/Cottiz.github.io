@@ -18,7 +18,7 @@ ol {font-family: verdana, sans-serif; text-align: left; }
 
 .hienompi {background-color: #CCFFCC; width: 100%; font-size:medium}
 
-.hienompi > p {text-align: center;}
+.hienompi > p {text-align: left;}
 
 footer >p {text-align: center; font-family: verdana, sans-serif; color: rgb(113, 139, 18) }
 
@@ -28,6 +28,5 @@ nav >p {background-color:aqua; text-align: center; font-family: verdana, sans-se
 
 figure >img {border: 5px solid #4333d4}
 
-#linkit > li{display: inline;}
-
+#linkit > li {display: inline;}
 #linkit {background-color: rgb(243, 191, 236); text-align: center;}
