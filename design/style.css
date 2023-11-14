@@ -67,7 +67,7 @@ header h1 {
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Philosopher', sans-serif;
 	color: #820263;
-	margin: 25px;
+	margin: 25px 15px;
 }
 
 /*--------- MAIN MENU ---------------------*/
@@ -145,7 +145,7 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 5px 10px;
 	border-radius: 6px;
 	position: absolute;
-	bottom: 20px;
+	bottom: 49px;
 
 }
 
@@ -190,7 +190,7 @@ article {
 	margin tai padding).*/
 	
 	position: relative;
-	padding: 50px;
+	padding: 30px 50px 85px 50px;
 	margin: 20px;
 	background-color: #C3BEAC;
 	}
