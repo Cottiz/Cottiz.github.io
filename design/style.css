@@ -236,8 +236,9 @@ article p {
 		min-width: 150px;
 		float: left; 
 	*/
-	border-style: solid;
-	border-color: #2E294E;
+
+		border-style: solid;
+		border-color: #2E294E;
 }
 
 /*-------- FOOTER ---------------*/
