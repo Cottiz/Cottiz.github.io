@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+ 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </head>  
+
+  <body>
+    <div class="container-fluid">
+      <div class=" row flex-nowrap">
+      
+        <div class="col-auto col-md-3">
+
+          <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px; height: auto;">
+                    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                      <svg class="bi me-2" width="40" height="50"><use xlink:href="#bootstrap"></use></svg>
+                      <span class="fs-4">Sivupalakki</span>
+                    </a>
+                    <hr>
+                        <ul class="nav nav-pills flex-column mb-auto">
+                          <li class="nav-item">
+                            <a href="#" class="nav-link link-dark" aria-current="page">
+                              <svg class="bi me-2" width="16" height="40"><use xlink:href="#home"></use></svg>
+                              Kotivalikko
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" class="nav-link link-dark">
+                              <svg class="bi me-2" width="16" height="40"><use xlink:href="#speedometer2"></use></svg>
+                              Kakut
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" class="nav-link link-dark">
+                              <svg class="bi me-2" width="16" height="40"><use xlink:href="#table"></use></svg>
+                              Tilaukset
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" class="nav-link link-dark">
+                              <svg class="bi me-2" width="16" height="40"><use xlink:href="#grid"></use></svg>
+                              Muut tuotteet
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" class="nav-link link-dark">
+                              <svg class="bi me-2" width="16" height="40"><use xlink:href="#people-circle"></use></svg>
+                              Asiakkaille
+                            </a>
+                          </li>
+                        </ul>
+                    <hr>
+                  <div class="dropdown">
+                      <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="naamakuva 2.bmp" alt="" width="32" height="32" class="rounded-circle me-2">
+                        <strong>KAT</strong>
+                      </a>
+                      <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+                        <li><a class="dropdown-item" href="#">Uudet projektit</a></li>
+                        <li><a class="dropdown-item" href="#">Asetukset</a></li>
+                        <li><a class="dropdown-item" href="#">Profiili</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Kirjautuminen</a></li>
+                      </ul>
+                  </div>                
+                </div>
+              </div>
+
+          <div class="col py-3">
+          
+            <header>
+              <div class="row">
+                <div class="col-md-12">       
+                  <h1>Bootstrap kokeilua eli kumpi kakku kaunihimpi?</h1>
+                </div>
+              </div>
+            </header>
+            
+          <main>
+            <div class="row">
+              <div class="col-md-6 bg-secondary text-light">
+                <h2>Vadelmakakku</h2>
+                <figure> 
+                  <img src="vadelma.jpeg" class="img-fluid" alt="...">
+                </figure>
+                <p>Oma maa vadelma.</p>
+              </div>
+          
+
+              <div class="col-md-6 bg-secondary text-light">
+                <h2>Mustikkakakku</h2>
+                <figure> 
+                  <img src="mustikka.jpeg"class="img-fluid" alt="...">
+                </figure>
+                <p>Muu maa mustikka vai miten se meni</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-8 bg-warning">        
+                  <h3>Bootstrapilla vai ilman?</h3>
+                <div class="card-group">
+                  <div class="card bg-success">  
+                    <div class="card-body">
+                      <h5 class="card-title">Bootstrapin hyödyt</h5>
+                      <ul class="card-text">
+                        <li>Bootstrap säästää aikaa ja energiaa, koska on nopea.</li>
+                        <li>Laaja valikoima valmiita tyylejä</li>
+                        <li>Pystyy räätälöimää</li>
+                        <li>Toimii eri selaimilla ja laittella, yleinen toimivuus hyvä</li>
+                        <li>Helposti muokattavissa</li> 
+                        <li>Standard design</li>
+                        <li>Laaja yhteisö ja apuverkosto</li>            
+                      </ul>             
+                    </div>              
+                  </div>
+                        
+                  <div class="card bg-danger">        
+                    <div class="card-body">
+                      <h5 class="card-title">Bootstrapin haitat</h5>
+                      <ul class="card-text"> 
+                        <li>Joutuu opettelemaan (paljon) </li>
+                        <li>Raskasta ladata isoja bs tiedostoja</li>
+                        <li>Komponentit rajoittaa luovuutta, geneerisiä</li>
+                        <li>Jos on tottunut koodaamaan, ei kokonaan itse koodaaminen ole niin vaivalloista, ja saa tehtyä juuri niinkuin haluaa</li>
+                        <li>Päivittämätön koodi voi vaikeuttaa. ei ehkä toimi, kun päivitetään.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                    
+              <div class="col-md-4 text-light bg-dark">
+                <h3>Tuomaristo ⚖️</h3>                             
+                <table class="table table-dark">
+                  <thead>
+                    <tr>                 
+                      <th scope="col">Etunimi</th>
+                      <th scope="col">Sukunimi</th>
+                      <th scope="col">Emoji</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td scope="row">Kirsi</td>
+                      <td>Kiireinen</td>
+                      <td>🏃‍♀️</td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Ykä</td>
+                      <td>Yksilöllinen</td>
+                      <td>👨‍🎨</td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Piia</td>
+                      <td>Portfoliosivu</td>
+                      <td>🙋‍♀️</td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Pete</td>
+                      <td>Perussiisti</td>
+                      <td>👨‍💼</td>
+                    </tr>
+                    <tr>  
+                      <td scope="row">Minna</td>
+                      <td>Monimutkainensivu</td>
+                      <td>🧙‍♀️</td>
+                    </tr>
+                  </tbody>
+                </table>           
+              </div>
+            </div>              
+          
+            <div class="row">       
+              <div class="card-group bg-secondary">
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Bootstrapin puolella</h4>
+                      <li>Kirsi Kiireinen 🏃‍♀️</li>  
+                      <li>Piia Portfoliosivu 🙋‍♀️</li>
+                      <li>Pete Perussiisti 👨‍💼</li>  
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="col-md-3">
+                  <div class="card"> 
+                    <div class="card-body">
+                      <h4 class="card-title">Bootstrappia vastaan</h4>             
+                      <li> Ykä Yksilöllinen 👨‍🎨 </li>
+                      <li>Minna Monimutkainensivu 🧙‍♀️</li>
+                      <li>Janne Opettaja 👨🏼‍🏫</li>            
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-md-3">
+                  <div class="card">           
+                    <div class="card-body">
+                      <h4 class="card-title">Äänestä Bootstrapin puolesta</h4>
+                      <p class="card-text"><p>Tässä voit antaa äänesi bootstrapin puolesta jos kannatat sitä</p>
+                      <button type="button" class="btn btn-success">Äänestä</button> 
+                      <p></p>
+                      <h4>Äänestä Bootstrappia vastaan</h4>
+                      <p>Tässä voit antaa äänesi bootstrappia vastaan jos vihaat sitä </p>
+                      <button type="button" class="btn btn-danger">Äänestä</button>               
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="card">           
+                    <div class="card-body">
+                      <h4 class="card-title">Yhteenveto</h4>
+                      <p class="card-text">Mielestäni sivun asettelu on helpompi tehdä bootstrapin avulla. 
+                      Värit on bootstrapin puolella huonot ja niitä on liian vähän. 
+                      Siksi myös on hyödyllistä käyttää css koodia, jotta sivuja saa helposti muokattua haluamallaan tavalla. 
+                      Bootstrapissa on kivoja ominaisuuksia, mutta niitä pitäisi osata käyttää ja se vaatii aikaa. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>         
+        </div>
+      </div>        
+    </div>   
+  </body>
+
+ </html>
