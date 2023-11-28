@@ -3,7 +3,6 @@ html {background-color: rgb(154, 149, 149);
 
 header {
     text-align: center;
-    
 }
 
 h1 {color: rgb(56, 13, 96);
@@ -12,16 +11,12 @@ padding: 20px;}
 h2, h3, h4 {margin: 10px;
 padding: 10px 0px}
 
-figure {
-   
-
+figure {  
     width: 50% center; border: 20px solid; border-color: rgb(100, 99, 97); 
 }
 
 body {
    background-color: rgb(193, 184, 184);
-   
-
 }
 .card {height: 550px;}
 
