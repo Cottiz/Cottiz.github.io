@@ -1,4 +1,13 @@
 h1 {
-	color: orange;
+	color: #f0b41D;
+	font-size: 50px;
 }
-p {font-size: large;}
+p {font-size: 30px;
+color: aliceblue;}
+
+li {font-size: 20px;
+color: aliceblue;}
+
+a {color:#D9CFE9;}
+
+html {background-color:#3c3e49;}
