@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio: Käyttäjähallinta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #7a2783;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+        header, footer {
+            text-align: center;
+            margin: 10px 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        h1 {
+            color: #333;
+        }
+        .section {
+            margin-top: 20px;
+            background-color: rgb(219, 222, 226);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tehtävä 4.1: Käyttäjähallinta</h1>
+            <p>Perehtyminen käyttäjänhallintaan sekä komentoriviltä että käyttöliittymän kautta</p>
+        </header>
+        
+        <div class="section">
+            <h2>1. Kahden uuden käyttäjän luominen. (opettaja ja opiskelija)</h2>
+            <p>Toisessa käytin luomisessa komentorivia ja toisessa graafista käyttöliittymää. Samalla käyttäjät saivat myös kotihakemistot.</p>
+            <img src="opiskelija 2.png" alt="Käyttäjien luonti">
+            <img src="opettaja 2.png" alt="Käyttäjien luonti">
+        </div>
+        
+        <div class="section">
+            <h2>2. Ryhmäliitännät</h2>
+            <p>Lisäsin toisen käyttäjistä ryhmään nimeltä "opiskelijat" ja toisen ryhmään "opettajat". Käytin sekä komentoriviä, että graafista käyttöympäristöä.</p>
+            <img src="opettajat 1.png" alt="Ryhmäliitännät">
+            <img src="Opettajat 2.png" alt="Ryhmäliitännät">
+            <img src="opiskelijat1.png" alt="Ryhmäliitännät">
+            <img src="opiskelijat 2.png" alt="Ryhmäliitännät">
+        </div>
+        
+        <div class="section">
+            <h2>3. Hakemistot ja oikeudet</h2>
+            <p>Loin hakemistot “opiskelijoiden_tiedostot” ja "opettajien_tiedostot", joille annoin oikeudet vain asianosaisille ryhmille. Varmistin kokeilemalla molemmilla käyttäjillä, että oikeudet ovat voimassa. Käytin molemmissa komentorivia.</p>
+            
+            <img src="uusi opettajat1.png" alt="Hakemistot ja oikeudet">
+            <img src="uusi chown.png" alt="Hakemistot ja oikeudet">
+            <img src="uusioikeudet.png" alt="Hakemistot ja oikeudet">
+            <img src="loginope.png" alt="Hakemistot ja oikeudet">
+            <img src="loginopiskelija.png" alt="Hakemistot ja oikeudet">
+        </div>
+        
+        <div class="section">
+            <h2>4. Lukitse tunnukset</h2>
+            <p>Lukitsin molemmat tunnukset väliaikaisesti. Graafinen käyttöliittymä ei tarjonnut vaihtoehtoja. Tarkastin sekä Linux Mintissä, että Kubuntun graafisessa ympäristössä ja siellä oli mahdollisuus ainoastaan joko lisätä käyttäjä tai poistaa. Kävin asiaa läpi myös opettajan kanssa. Laitan kuitenkin kuvakaappauksen Kubuntun graafisesta ympäristöstä. Käytin lopulta pelkkää komentoriviä, mutta toteutin lukitsemisen käyttämällä eri komentoja.</p>
+            <img src="lukittu.png" alt="Tunnusten lukitus">
+            <img src="Kubuntu.png" alt="Tunnusten lukitus">
+            <img src="Kuvakaappaus opiskelija 1.png" alt="Tunnusten lukitus">
+        </div>
+        
+        <footer>
+            <p>Kati Tuukkanen</p>
+            <p><a href="mailto:kati.tuukkanen@student.laurea.fi">kati.tuukkanen@student.laurea.fi</a></p>
+            <p>24.04.2024</p>
+        </footer>
+    </div>
+</body>
+</html>
