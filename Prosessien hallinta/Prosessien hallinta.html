@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Prosessien Hallinta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #848181;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #6a1b9a;
+        }
+        p, li {
+            line-height: 1.6; padding-bottom: 75px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            color: #fff;
+            background-color: #6a1b9a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Prosessien Hallinta</h1>
+        <h2>Tehtävä 4.2</h2>
+        
+
+        <h3>Tavoitteena perehtyä prosessien hallintaan</h3>
+        
+
+        <h2>Tehtävä</h2>
+        <ol>
+            <li>
+                Käynnistin komentoriviltä muutamia ohjelmia picon, nanon ja firefox selaimen. 
+                <img src="Kuva1.png" alt="Kuvakaappaus 1">
+                
+            </li>
+            <li>
+                Selvitin prosessien ID numeroita ja prioriteetteja graafisessa sekä komentorivin kautta. Graafinen käyttöympäristö oli mielestäni tässä asiassa helpompi ymmärtää, koska siellä näkyi selkeästi id numero ja prioriteetti.
+                <img src="Kuva2.png" alt="Kuvakaappaus 2">
+                <img src="Kuva3.png" alt="Kuvakaappaus 3">
+                <img src="Kuva4.png" alt="Kuvakaappaus 4">
+                <img src="Kuva5.png" alt="Kuvakaappaus 5">
+                
+            </li>
+            <li>
+                Muutin prosessien nice-arvoja korkeamman prioriteetin arvoiksi komentorivillä ja graafisessa ympäristössä. Nano prioriteetille Very high komentorivillä ja graafisessa Firefox prioriteetille High. 
+                <img src="Kuva6.png" alt="Kuvakaappaus 6">
+                <img src="Kuva7.png" alt="Kuvakaappaus 7">
+                <img src="Kuva8.png" alt="Kuvakaappaus 8">
+            </li>
+            <li>
+                Lopetin prosesseja komentorivillä, käyttäen kill-komentoa. Käytin seuraavia kill-komentoja. 
+                <img src="Kuva9.png" alt="Kuvakaappaus 9">
+                <img src="Kuva10.png" alt="Kuvakaappaus 10">
+            </li>
+            <li>
+                Etsin käynnistämiäni sovelluksia prosessilistauksesta yhdellä grep-komennolla, mutta koska olin lopettanut jo paljon ohjelmia niin tuloksia löytyi todella vähän.
+                <img src="Kuva11.png" alt="Kuvakaappaus 11">
+
+            </li>
+            <li>
+                Lopettaisin ne yhdellä komennolla tällä tavalla:
+                <img src="Kuva12.png" alt="Kuvakaappaus 12">
+            </li>
+            
+        </ol>
+
+        <h2>Ajastukset</h2>
+            <h3>
+                Loin crontabiin joukon pyydettyjä ajastuksia. 
+                <img src="Kuva14.png" alt="Crontab-asetukset">
+                <img src="Kuva15.png" alt="Crontab-asetukset">
+            </h3>
+        
+            <ol>
+            <li>Maanantaisin klo 8:58: <code>export DISPLAY=:0 && firefox --new-window http://www.iltalehti.fi</code></li>
+            <li>Keskiviikkoisin klo 15:00: <code>sudo apt-get update && sudo apt-get update -y</code></li>
+            <li>Joka päivä klo 23:55: <code>varmuuskopioi.sh</code></li>
+            </ol>
+     </div>
+        <div class="footer">
+            Kati Tuukkanen
+            <p><a href="mailto:kati.tuukkanen@student.laurea.fi">kati.tuukkanen@student.laurea.fi</a></p>
+            
+            © 2024 Tehtävä 4.2 Prosessien hallinta
+            
+        </div>
+    </body>
+    </html>
