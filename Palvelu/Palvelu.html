@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Palvelun luominen ja hallinta</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
+        header, section { margin-bottom: 20px; }
+        h1, h2 { color: #333366; }
+        pre { background-color: #f4f4f4; padding: 10px; }
+        img { width: 100%; max-width: 600px; }
+        article { margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Palvelun luominen ja hallinta</h1>
+        <p>Bash-skriptin muuttaminen palveluksi Linuxissa.</p>
+    </header>
+    <section>
+        <h2>Skriptin luominen</h2>
+        <article>
+            <p>Skriptin luonti ja tallennus:</p>
+            <pre>nano /usr/bin/esimerkki.sh</pre>
+            <img src="Kuva1.png" alt="Kuvakaappaus Nano-editorista">
+            <p>Kopioi ja liitä seuraava koodi Nano-ohjelmaan:</p>
+            <pre>echo ”Esimerkkipalvelun starttasi”
+                
+            
+while :
+do
+    echo ”Palvelu käynnissä, esitä tämä teksti 15 sekunnin välein”;
+    sleep 15s;
+done</pre>
+            <p>Kuvakaappaus editorista:</p>
+            <img src="Kuva2.png" alt="Kuvakaappaus Nano-editorista">
+        </article>
+        <article>
+            <p>Skriptille annetaan suoritusoikeudet:</p>
+            <pre>chmod +x /usr/bin/esimerkki.sh</pre>
+            <img src="Kuva3.png" alt="Kuvakaappaus Nano-editorista">
+        </article>
+    </section>
+    <section>
+        <h2>Unit-tiedoston luominen</h2>
+        <article>
+            <p>Unit-tiedoston luominen:</p>
+            <pre>nano /etc/systemd/system/esimerkkipalvelu.service</pre>
+            <p>Kopioi ja liitä seuraava määritys:</p>
+            <pre>[Unit]
+Description=Esimerkkipalvelu.
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /usr/bin/esimerkki.sh
+
+[Install]
+WantedBy=multi-user.target</pre>
+            <p>Kuvakaappaus Unit-tiedostosta:</p>
+            <img src="Kuva4.png" alt="Kuvakaappaus Unit-tiedostosta">
+        </article>
+        <article>
+            <p>Unit-tiedostolle annetaan oikeudet:</p>
+            <pre>sudo chmod 644 /etc/systemd/system/esimerkkipalvelu.service</pre>
+            <img src="Kuva5.png" alt="Kuvakaappaus Nano-editorista">
+        </article>
+    </section>
+    <section>
+        <h2>Palvelun hallinta</h2>
+        <article>
+            <p>Palvelun käynnistäminen:</p>
+            <pre>sudo systemctl start esimerkkipalvelu</pre>
+            <p>Palvelun tilan tarkistaminen:</p>
+            <pre>sudo systemctl status esimerkkipalvelu</pre>
+            <p>Kuvakaappaus palvelun tilasta:</p>
+            <img src="Kuva6.png" alt="Kuvakaappaus palvelun tilasta">
+        </article>
+    </section>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Tehtävät</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        section {
+            margin: 20px;
+            padding: 10px;
+            background-color: #ffffff;
+            border: 2px solid #ddd;
+        }
+        img {
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin: 10px 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>4.3 Palveluiden luominen</h1>
+    </header>
+    <main>
+        <!-- Tehtävä 1 -->
+        <section>
+            <h2>Tehtävä 1</h2>
+            <p>Käynnistin Linux-terminaalin ja tutkin järjestelmän palveluita. Kuinka monta palvelua on running tilassa? Running tilassa on 37 palvelua.</p>
+            <img src="K1a.png" alt="Tehtävä 1 Kuvakaappaus">
+            <p>Etsin rsyslog -nimisen palvelun, joka löytyy kuvassa näkyvällä komennolla. Palvelu on käytössä enabled ja myöskin käynnissä running. Rsyslog palvelun PID on 636.  
+                Palvelu Rsyslog on vastuussa järjestelmän lokitietojen käsittelystä. Se vastaanottaa lokitietoja sovelluksilta ja järjestelmäkomponenteilta, ja tallentaa ne määriteltyihin tiedostoihin, lähettää eteenpäin tai käsittelee niitä muilla tavoilla.
+                </p>
+            <img src="K1.png" alt="Tehtävä 1 Kuvakaappaus">
+        </section>
+
+        <!-- Tehtävä 2 -->
+        <section>
+            <h2>Tehtävä 2</h2>
+            <p>Uudelleenkäynnistin Rsyslog palvelun tällä tavalla.</p>
+            <img src="K2.png" alt="Tehtävä 2 Kuvakaappaus">
+            <img src="K3.png" alt="Tehtävä 2 Kuvakaappaus">
+        </section>
+
+         <!-- Tehtävä 3 -->
+         <section>
+            <h2>Tehtävä 3</h2>
+            <p>Loin sen jälkeen uuden palvelun nimeltä testi. Palvelun tulee sisältää seuraava bash skripti:
+
+                echo "Testi starttaa"
+                while :
+                do
+                [ -d "/home" ] && echo "Directory /home/ exists.";
+                sleep 15s;
+                done</p>
+                <p>Loin siis kyseisen nano tiedoston. Lisäksi loin testi palvelun. Annoin myös suoritusoikeudet kyseiseen palveluun. </p>
+                <img src="K5.png" alt="Tehtävä 2 Kuvakaappaus">
+                <img src="K4.png" alt="Tehtävä 2 Kuvakaappaus">
+                <img src="K6.png" alt="Tehtävä 2 Kuvakaappaus">
+                <img src="K7.png" alt="Tehtävä 2 Kuvakaappaus">
+                <img src="K8.png" alt="Tehtävä 2 Kuvakaappaus">
+                <p>Otin kuvan palvelun Statuksesta:</p>
+                <p>Palvelun PID on 2821. Palvelu on käytössä ja käynnissä. </p>
+           
+                <p>Statuksessa tulostetaan ja kerrotaan, että hakemisto home on olemassa.</p>
+
+                <p>Kuvakaappaukseni talteen tekemästäsi palvelusta ja sen suorituksesta</p>
+            <img src="K9.png" alt="Tehtävä 2 Kuvakaappaus">
+        </section>
+
+        <!-- Voit jatkaa lisäämällä lisää tehtäviä samanlaisella rakenteella aina Tehtävä 9 asti. -->
+    </main>
+    <footer>
+        <p>&copy; 2024 Kati Tuukkanen</p>
+    </footer>
+</body>
+</html>
