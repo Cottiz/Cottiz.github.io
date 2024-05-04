@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Salasanojen murtaminen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eee;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .header, .footer {
+            background-color: #6a6464;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .content {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .task {
+            margin-bottom: 20px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-left: 3px solid #555;
+            overflow: auto;
+        }
+       
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+
+        p {padding-bottom: 15px;}
+        h2 {padding-top: 50px;}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Salasanojen murtaminen</h1>
+    </div>
+
+    <div class="content">
+        <div class="task">
+            <h2>Tehtävä A: Salasanojen murtaminen raakaa laskentaa käyttäen</h2>
+            <p>Yritin ensin kokeilla online Kali Linuxia, mutta se ei toiminut olleenkaan. Päädyin sitten asentamaan Kali Linuxin virtuaaliboxiin ja asensin myös johnny graafisen näkymän. Käytin John The Ripper ja Johnnya. Loin kolme käyttäjää nimillä heikko, keski ja vahva. Alla olevassa kuvakaappauksessa näkyy kahden salasanan murto. Toinen oli Kali Linuxin oma aloitussalasana ja toinen heikko. .</p>
+            <img src="T4.png" alt="Tehtävä 1 Kuvakaappaus">
+            <img src="T5.png" alt="Tehtävä 1 Kuvakaappaus">
+            <img src="T6.png" alt="Tehtävä 1 Kuvakaappaus">
+            <img src="T7.png" alt="Tehtävä 1 Kuvakaappaus">
+            <p>Yhteenvetona sanoisin, että kaksi ekaa salasanaa sai helposti rikottua, mutta keski ja vahvaa ei sitten lainkaan. Kone jurskutti siinä määrin, että ajatellin sen lähtevän jo lentoon. Alkoi tuntumaan jo siltä, että homma ei etene ja kone kärsii, joten lopetin homman kesken. Keski salasana oli Heik5 ja vahva salasana oli Happ4!</p>
+        </div>
+        <div class="task">
+            <h2>Tehtävä B: Salasanojen murtaminen sanakirjahyökkäysten ja sateenkaaritaulujen avulla</h2>
+            <p>1. Käytin sateenkaaritauluja yrittäessä murtaa SHA-1 muodossa olevia salasanoja. Tässä kuvakaappauksia tuloksista.</p>
+            <pre>SHA-1 salasanat:
+ab87d24bdc7452e55738deb5f868e1f16dea5ace
+01f7b6a103603487e5ffd126ade782d2bcdd8922
+...</pre>
+            <img src="T1.png" alt="Tehtävä 1 Kuvakaappaus">
+            <p>2. Kaksi salasanaa ei murtunut ja sitten kokeilin netistä löytyvää seuraavaa ohjelmaa, josta sainkin yhden salasanan murrettua. Kuva alla. </p>
+            <img src="T2.png" alt="Tehtävä 1 Kuvakaappaus">
+            
+            <p>3. Käytin sanakirjahyökkäyksiä ja myös kokeilin sateenkaaritauluja salasanojen nopeampaan murtamiseen. Yritin selvittää MD5 muodossa olevat salasanat ja tässä kuvakaappauksia tuloksista. </p>
+            <pre>MD5 salasanat:
+055b5174cd20812d6188bde80595ef89
+cf4c362230c6801a4a5878752e75d7c7
+...</pre>
+
+    <p>Latasin tiedoston finnish-unknown.txt koneelle ja loin salasanat.txt tiedoston. Ja aloitin salasanojen murtamisen salasanasanakirjan avulla.   </p>
+<img src="h1.png" alt="Tehtävä 1 Kuvakaappaus">
+<p>Sanakirjan avulla sain kaikki paitsi yhden MD5 salasanan murrettua.</p>
+<img src="h2.png" alt="Tehtävä 1 Kuvakaappaus">
+
+<p>4. Sateenkaaritaulun avulla sain kaikki MD5 salasanat murrettua. </p>
+<img src="T3.png" alt="Tehtävä 1 Kuvakaappaus">
+
+
+        </div>
+    </div>
+
+    <h3>Yhteenveto:</h3>
+<p> Tehtävä A: tosiaan jäi sekä keski että vahva salasana murtamatta, koska kone tuntui pyörittävän turhaa saamatta mitään aikaan. Ja konetta sääliessä päädyin lopettamaan murtamisen.</p>
+<p> Tehtävä B: yksi salasana jäi murtamatta ja se oli SHA-1. Kokeilin erilaisia online sovelluksia salasanan murtamiseen, mutta niistä en saanut tähän ainoaan salasanan murtamiseen apuja. </p>
+
+<div class="footer">
+        <p>© Kati Tuukkanen, 4.5.2024</p>
+    </div>
+</body>
+</html>
